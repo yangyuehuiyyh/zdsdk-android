@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="biz.zhidu.zdsdk.MainActivity">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="biz.zhidu.zdsdk.MainActivity">
+    <Button
+        android:text="Start"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnStart"
+        android:layout_weight="0.15" />
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="152dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@+id/btnStart"
+            android:text="Stop" />
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="biz.zhidu.zdsdk.MainActivity">
+
+        <Button
+            android:text="QureyRc"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnQRecord" />
+
+        <Button
+            android:id="@+id/btnGetRercord"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/btnQRecord"
+            android:text="GetRcList" />
+
+        <Button
+        android:id="@+id/btnPlayRecord"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/btnGetRercord"
+        android:text="PlayRc" />
+
+        <Button
+            android:id="@+id/btnStopRecord"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/btnPlayRecord"
+            android:text="StopRc" />
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context="biz.zhidu.zdsdk.MainActivity">
+    <Button
+        android:text="Left"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPTZ" />
+    <Button
+        android:text="right"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/btnPTZ"
+        android:id="@+id/btnPTZ2" />
+    </RelativeLayout>
+    <Button
+        android:text="stop_ptz"
+        android:layout_width="353dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnPTZ3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_below="@+id/surfaceView"
+        android:layout_alignEnd="@+id/surfaceView"
+        android:id="@+id/textView" />
+
+</LinearLayout>
